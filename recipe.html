@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe Page</title>
+    <link rel="stylesheet" href="./styles/home.css" />
+    <link rel="stylesheet" href="./styles/shared.css" />
+    <link rel="stylesheet" href="./styles/recipe.css" />
+  </head>
+  <body>
+    <header class="main_header">
+      <div class="header">
+        <img src="./assets/images/logo.png" alt="" />
+        <ul class="menu" id="menu">
+          <li><a href="./index.html">Start</a></li>
+          <li><a href="./recipe.html">Rezept des Tages</a></li>
+          <li><a href="">Kontakt</a></li>
+          <li><a href="">Impressum</a></li>
+        </ul>
+        <i class="fa-solid fa-bars custom_menu" onclick="menuClicked()"></i>
+      </div>
+    </header>
+    <section class="recipe_page">
+      <div class="recipe_hero_section">
+        <h2>Béchamel-Hackfleisch-Lasagne</h2>
+        <img
+          src="./assets/images/recepie1.jpg"
+          alt=""
+          class="hero_section_main_img"
+        />
+        <div class="recipe_badges">
+          <div>
+            <img src="./assets/images/clock-regular.svg" alt="" />
+            <p>15 Min</p>
+          </div>
+          <div>
+            <img src="./assets/images/brain-solid.svg" alt="" />
+            <p>Simpel</p>
+          </div>
+          <div>
+            <img src="./assets/images/calendar-alt-regular.svg" alt="" />
+            <p>28.09.2023</p>
+          </div>
+        </div>
+      </div>
+      <div class="recipe_calculator_section">
+        <div class="line"></div>
+        <div class="recipe_input_div">
+          <p>Zutaten für:</p>
+          <form onsubmit="UpdateIngredient(event)" class="recipe_input">
+            <input
+              type="number"
+              name=""
+              id="ingredient_input"
+              min="1"
+              value="1"
+            />
+            <button type="submit">Portionen</button>
+          </form>
+        </div>
+        <div class="recipe_ingredient">
+          <div class="ingredient ingredient_with_color">
+            <p id="ingredienrt_one" class="ingredient_item"></p>
+            <p>Hähnchenbrustfilets</p>
+          </div>
+          <div class="ingredient">
+            <p id="ingredienrt_two" class="ingredient_item"></p>
+            <p>Zwiebel(n)</p>
+          </div>
+          <div class="ingredient ingredient_with_color">
+            <p id="ingredienrt_three" class="ingredient_item"></p>
+            <p>Tomatenpüree</p>
+          </div>
+          <div class="ingredient">
+            <p id="ingredienrt_four" class="ingredient_item"></p>
+            <p>Knoblauchzehe(n)</p>
+          </div>
+          <div class="ingredient ingredient_with_color">
+            <p id="ingredienrt_five" class="ingredient_item"></p>
+            <p>Margarine</p>
+          </div>
+        </div>
+      </div>
+      <div class="recipe_second_section">
+        <h2>Zubereitung</h2>
+        <div class="recipe_badges">
+          <div>
+            <img src="./assets/images/calendar-alt-regular.svg" alt="" />
+            <p>Arbeitszeit ca. 25 min.</p>
+          </div>
+          <div>
+            <img src="./assets/images/calendar-alt-regular.svg" alt="" />
+            <p>Koch-/Backzeit ca. 1Stunde 45 Minuten.</p>
+          </div>
+        </div>
+        <p>
+          Hackfleischsoße: Hackfleisch mit 2 El Öl anbraten, 2 Zwiebeln schälen,
+          in Würfel schneiden und dazugeben. 1 EL Tomatenmark unterrühren und
+          mit 500 ml pürierten Tomaten und ein wenig Wasser ablöschen. Eine
+          Knoblauchzehe klein schneiden und dazugeben. Danach würzen mit Salz,
+          Pfeffer, Paprika und Oregano und 10 Minuten kochen lassen.
+          Béchamelsoße: 80 g Margarine im Topf erhitzen, 80 g Mehl dazugeben und
+          anschwitzen lassen. 1/2 Liter Gemüsebrühe langsam hinzugeben und immer
+          gut umrühren. Dann die Milch hinzugeben und aufkochen lassen, eine
+          Hand voll von dem Käse in die Béchamelsoße geben und gut umrühren. Mit
+          Salz, Pfeffer und Muskat würzen. Erst ein wenig von der
+          Hackfleischsoße in eine feuerfeste Form geben, darauf Lasagneblätter,
+          dann wieder Hackfleischsoße, dann die Béchamelsoße auf die
+          Hackfleischsoße geben, darauf wieder Lasagneblätter und das so weiter
+          machen. Als letztes muss die Béchamelsoße darauf sein. Zum Schluss den
+          restlichen Pizzakäse darauf streuen. 30- 40 Minuten bei 180° Umluft
+          backen.
+        </p>
+        <h3>Rezept erstellt von</h3>
+        <div class="recipe_profile">
+            <img src="./assets/images/logo.png" alt="">
+            <h3>Lina</h3>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer_parent">
+      <footer class="footer">
+        <div class="footer_logo_div">
+          <img src="./assets/images/whitelogo.png" alt="" />
+          <div class="footer_links">
+            <a href="./recipe.html">Rezept des Tages</a>
+            <a href="">Kontakt</a>
+            <a href="">Impressum</a>
+          </div>
+        </div>
+        <div class="footer_logos">
+          <div class="facebook">
+            <i class="fa-brands fa-facebook"></i>
+            <div class="logo_content">
+              <p>FIND US ON</p>
+              <h3>FACEBOOK</h3>
+            </div>
+          </div>
+          <div class="insta">
+            <i class="fa-brands fa-instagram"></i>
+            <div class="logo_content">
+              <p>FOLLOW US ON</p>
+              <h3>INSTAGRAM</h3>
+            </div>
+          </div>
+          <div class="twitter">
+            <i class="fa-brands fa-x-twitter"></i>
+            <div class="logo_content">
+              <p>FOLLOW US ON</p>
+              <h3>TWITTER</h3>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="/script/recipe.js"></script>
+  </body>
+</html>

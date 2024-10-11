@@ -62,6 +62,7 @@
     align-items: center;
     justify-content: center;
     gap: 20px;
+    transition-duration: 0.5s;
 }
 .card img{
     width: 100%;
@@ -101,7 +102,76 @@
     width: 30%;
     border-radius: 10px;
 }
-
+.footer_parent{
+    background-color: #403B3B ;
+    width: 100%;
+    min-height: 150px;
+    padding: 50px 0px;
+    box-sizing: border-box;
+}
+.footer_links a{
+    color: white !important;
+}
+.footer_links a:hover{
+    background-color: transparent;
+}
+.footer{
+    width: 80%;
+    max-width: 1440px;
+    margin: 0px auto;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100%;
+}
+.footer img{
+    filter: brightness(0) invert(1);
+    width: 200px;
+    height: 60px;
+}
+.footer_logos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.facebook, .insta, .twitter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 130px;
+    padding: 8px 10px;
+    border-radius: 5px;
+}
+.footer_logos i{
+    font-size: 25px;
+}
+.footer_logos p{
+    font-size: 8px;
+    font-weight: 700;
+}
+.footer_logos h3{
+    font-size: 16px;
+}
+.facebook{
+    background-color: #1877F2;
+}
+.insta{
+    background: linear-gradient(to right, #4c68d7 ,#cd486b, #fbad50 );
+}
+.twitter{
+    background-color: 	#1DA1F2;
+}
+.footer_logo_div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.card:hover{
+    scale: 1.1;
+}
 @media screen and (max-width:1000px) {
     .hero_content{
         gap: 20px;
@@ -134,7 +204,20 @@
         flex-direction: column;
         gap: 30px;
     }
-
+    .footer{
+        flex-direction: column;
+        gap: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer_logo_div{
+        justify-content: center;
+        align-items: center;
+    }
+    .footer_logos{
+        justify-content: center;
+    }
+   
     
 }
 
@@ -149,4 +232,12 @@
     .description_content h3{
         text-align: center;
     }
+    .footer_links{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
 }

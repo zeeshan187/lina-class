@@ -1,0 +1,119 @@
+.recipe_page{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px 0px;
+}
+.recipe_hero_section{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 1440px;
+    width: 80%;
+    margin: 0px auto;
+}
+.hero_section_main_img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.recipe_badges{
+    display: flex;
+    justify-content: start;
+    gap: 30px;
+    align-items: center;
+}
+.recipe_badges img{
+    width: 13px;
+    height: 13px;
+}
+.recipe_badges div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    width: fit-content;
+    background-color: #EFEFEF;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.recipe_calculator_section{
+    max-width: 1440px;
+    width: 80%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.line{
+    border: 1px solid #EFEFEF;
+}
+.recipe_input_div{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+}
+.recipe_input input{
+    height: 30px;
+}
+.recipe_input{
+    display: flex;
+    align-items: center;
+}
+.recipe_input button{
+    background-color: green;
+    color: white;
+    height: 33px;
+    border: transparent;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    border: 3px solid transparent;
+    padding: 0px 5px;
+}
+.recipe_ingredient{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.ingredient{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.ingredient p{
+    width: 40%;
+}
+.ingredient_with_color{
+    background-color: #EFEFEF;
+}
+.recipe_second_section{
+    max-width: 1440px;
+    width: 80%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.recipe_profile{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.recipe_profile img{
+width: 200px;
+height: 50px;
+}
+
+@media screen and (max-width:500px) {
+    .recipe_badges{
+        flex-direction: column;
+    }
+    .recipe_input_div{
+        flex-direction: column;
+    }
+}
