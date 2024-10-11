@@ -1,0 +1,152 @@
+.home_page{
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+   
+}
+.hero_section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 0px;
+    width: 80%;
+    max-width: 1440px;
+    margin: 0px auto;
+
+}
+.hero_section img{
+    width: 48%;
+    border-radius: 10px;
+}
+.hero_content{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: start;
+}
+.hero_content button{
+    background-color: green;
+    color: white;
+    height: 45px;
+    width: 200px;
+    border: transparent;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    border: 3px solid transparent;
+}
+.hero_content button:hover{
+    background-color: white;
+    color: black;
+    border: 3px solid green;
+}
+.card_section_with_bgc{
+    background-color: #EDEDED;
+    padding: 50px 0px;
+}
+.card_section{
+    display: flex ;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    width: 80%;
+    max-width: 1440px;
+    margin: 0px auto;
+}
+.card{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.card img{
+    width: 100%;
+    border-radius: 10px;
+}
+.card_parent{
+    display: flex ;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+
+}
+.description_section{
+    width: 80%;
+    max-width: 1440px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0px;
+}
+.description_content{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: end;
+}
+.description_content h3{
+    text-align: end;
+}
+.description_content span{
+    font-weight: 600;
+}
+.description_section img{
+    width: 30%;
+    border-radius: 10px;
+}
+
+@media screen and (max-width:1000px) {
+    .hero_content{
+        gap: 20px;
+        width: 100%;
+    }
+    .hero_section{
+        flex-direction: column;
+        align-items: start !important;
+        gap: 30px;
+        padding: 40px 0px;
+    }
+    .hero_section img{
+        width: 70%;
+        margin: 0px !important;
+    }
+    .card{
+        width: 250px;
+    }
+    .card_parent{
+        justify-content: center;
+        gap: 20px;
+    }
+    .description_content{
+        width: 100%;
+    }
+    .description_section img{
+        width: 70%;
+    }
+    .description_section{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    
+}
+
+@media screen and (max-width:500px) {
+    .hero_section img{
+        width: 90%;
+        margin: 0px !important;
+    }
+    .description_section img{
+        width: 100%;
+    }
+    .description_content h3{
+        text-align: center;
+    }
+}
