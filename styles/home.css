@@ -36,10 +36,26 @@
     cursor: pointer;
     border: 3px solid transparent;
 }
+.hero_content a{
+    color: white;
+    /* background-color: green; */
+}
 .hero_content button:hover{
     background-color: white;
     color: black;
     border: 3px solid green;
+}
+.hero_content button:hover .button_link{
+    color: black;
+}
+.hero_content a:hover{
+    background-color: white;
+    color: black;
+    /* border: 3px solid green; */
+}
+.card:hover{
+    background-color: transparent !important;
+    color: black !important;
 }
 .card_section_with_bgc{
     background-color: #EDEDED;

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/home.css" />
+    <link rel="stylesheet" href="./styles/shared.css" />
+    <link rel="stylesheet" href="./styles/contact.css" />
+  </head>
+  <body>
+    <header class="main_header">
+      <div class="header">
+        <img src="./assets/images/logo.png" alt="" />
+        <ul class="menu" id="menu">
+          <li><a href="./index.html">Start</a></li>
+          <li><a href="./recipe.html">Rezept des Tages</a></li>
+          <li><a href="./contact.html">Kontakt</a></li>
+          <li><a href="./impression.html">Impressum</a></li>
+        </ul>
+        <i class="fa-solid fa-bars custom_menu" onclick="menuClicked()"></i>
+      </div>
+    </header>
+    <section class="contact_us_parent">
+      <div class="contact_us_page">
+        <h2>Kontaktiere uns</h2>
+        <div class="name_input">
+          <label for="name">Dein Name: </label>
+          <input type="text" placeholder="Enter Your Name" id="name" />
+        </div>
+        <div class="email_input">
+          <label for="email">Deine E-Mail: </label>
+          <input type="email" placeholder="Enter Your Email" id="email" />
+        </div>
+        <div class="message_input">
+          <label for="message">Deine Nachricht: </label>
+          <textarea id="message" placeholder="Enter Your Message ....."></textarea>
+        </div>
+        <button class="contact_submit_btn"><a href="./contactSubmit.html">Abschicken</a></button>
+      </div>
+    </section>
+    <div class="footer_parent">
+      <footer class="footer">
+        <div class="footer_logo_div">
+          <img src="./assets/images/whitelogo.png" alt="" />
+          <div class="footer_links">
+            <a href="">Rezept des Tages</a>
+            <a href="">Kontakt</a>
+            <a href="">Impressum</a>
+          </div>
+        </div>
+        <div class="footer_logos">
+          <div class="facebook">
+            <i class="fa-brands fa-facebook"></i>
+            <div class="logo_content">
+              <p>FIND US ON</p>
+              <h3>FACEBOOK</h3>
+            </div>
+          </div>
+          <div class="insta">
+            <i class="fa-brands fa-instagram"></i>
+            <div class="logo_content">
+              <p>FOLLOW US ON</p>
+              <h3>INSTAGRAM</h3>
+            </div>
+          </div>
+          <div class="twitter">
+            <i class="fa-brands fa-x-twitter"></i>
+            <div class="logo_content">
+              <p>FOLLOW US ON</p>
+              <h3>TWITTER</h3>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

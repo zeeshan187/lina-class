@@ -1,0 +1,94 @@
+.contact_us_page{
+    width: 450px;
+    max-width: 1440px;
+    margin: 100px auto;
+    background-color: #EFEFEF;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+.contact_us_parent{
+    display: flex ;
+    min-height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.contact_us_page div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.contact_us_page input{
+    border: transparent;
+    height: 35px;
+    width: 100%;
+    padding: 0px 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.contact_us_page textarea{
+    height: 150px;
+    border: transparent;
+    border-radius: 5px;
+    padding: 10px;
+}
+.contact_submit_btn{
+    background-color: green;
+    color: white;
+    height: 45px;
+    width: 200px;
+    border: transparent;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    border: 3px solid transparent;
+    margin: 0px auto;
+}
+.contact_submit_btn a{
+    color: white;
+}
+.contact_submit_btn button:hover{
+    background-color: white;
+    color: black;
+    border: 3px solid green;
+    
+}
+.submit_page{
+    width: 80%;
+    max-width: 1440px;
+    margin: 0px auto;
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    flex-direction: column;
+    gap: 20px;
+}
+.submit_page button{
+    background-color: green;
+    color: white;
+    height: 45px;
+    width: 200px;
+    border: transparent;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    border: 3px solid transparent;
+    margin: 0px auto;
+}
+.submit_page a{
+    color: white;
+}
+
+@media screen and (max-width: 800px) {
+    .submit_page{
+        font-size: 20px;
+    }
+}
