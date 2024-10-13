@@ -71,6 +71,7 @@ a:hover{
         align-items: center;
         padding-top: 50px;
         gap: 30px;
+        background-color: white;
     }
     .custom_menu{
         display: block !important;
